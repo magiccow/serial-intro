@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import time
 import serial
 
 
@@ -10,7 +9,6 @@ ser = serial.Serial(
            timeout=1
    )
 
-counter=0
 
 while 1:
         bytesToRead = ser.inWaiting()
